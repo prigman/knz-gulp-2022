@@ -1,0 +1,76 @@
+.body_page {
+  background: url("@img/Group 244.png") 0 0 no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  margin-bottom: 130px;
+  .breadcrumbs {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1120px;
+    li {
+      margin-top: 15px;
+      a {
+        font-size: 14px;
+        color: white;
+
+        font-weight: 300;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    span {
+      color: white;
+    }
+    li:after {
+      content: "/";
+      padding: 0 10px;
+      color: white;
+    }
+    li:last-child:after {
+      content: "";
+    }
+  }
+}
+.body_page_title {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h1 {
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  border-top: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-collapse: collapse;
+  outline: 3px solid #f2c311;
+  font-size: 15px;
+  background: #fff !important;
+}
+.table th {
+  font-weight: bold;
+  padding: 7px;
+  background: #f2c311;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #f2c311;
+}
+.table td {
+  padding: 7px;
+  border: none;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  font-size: 15px;
+}
+.table tbody tr:nth-child(even) {
+  background: #f8f8f8 !important;
+}

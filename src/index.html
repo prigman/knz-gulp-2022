@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+    "title":"Главная"
+})
+
+<body>
+    <div class="body_container">
+        @@include('html/header.html',{})
+
+        <main class="main">
+            <div class="main_wrapper">
+
+                <div class="main_container">
+
+
+                    <div class="main_container-wrapper">
+
+                        <div class="main_container-text">
+                            <h1>Новый уровень ремонта квартир в Одессе</h1>
+                            <p>KANAZIRSKIY & Vi. - проверенные временем люди предоставляющие услуги ремонта квартир</p>
+                        </div>
+                        <div class="main_container-buttons">
+                            <button>
+                                <a href="#benefits"><p>Наши преимущества</p></a>
+                            </button></a>
+                            <button class="main_container-button2">
+                                <a href="#plan"><p>Схема работы KNZ</p></a>
+                            </button>
+                            <button>
+                                <a href="#form"><p>Заказать ремонт "под ключ"</p></a>
+                            </button></a>
+                        </div>
+                    </div>
+
+                    <div class="main_container_form-container">
+                        <div class="main_container_form-title">
+                            <h2>Нужна помощь в замере?</h2>
+                            <p>Мы свяжемся и поможем!</p>
+                        </div>
+                        <div class="main_container_form-wrapper">
+                            <form action="">
+                                <input type="text" name="Name" placeholder="Ваше имя" required>
+                                <input type="number" name="Phone" placeholder="Номер телефона" required>
+                                <input type="text" name="Info" placeholder="Дополнительная информация" required>
+                                <p>Captcha</p>
+                                <button class="main_container_form_button"><p>Отправить</p></button>
+                            </form>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="about">
+        <div class="main_about-title-container">
+            <div class="about_title">
+                <h1>Пару слов о KNZ</h1>
+            </div>
+        </div>
+        <div class="about_container">
+            <div class="about_image">
+                <img src="@img/Group 120.png" alt="">
+            </div>
+            <div class="about_text-container">
+                <div class="about_title-text">
+                    <h2>Kanazirskiy & Vi.</h2>
+                </div>
+                <div class="about_desc">
+                    Команда специалистов знающих своё дело профессиональный стаж которых <span>более 10 лет</span>. C нами ремонт Вашей квартиры будет <span>тщательно</span> регулироваться и контролироваться дизайнером, проектным менеджером и контролёром ОТК. Десятки выполненых работ, <span>более 100</span> счастливых клиентов, которые рекомендуют нас своим родственникам и знакомым. С KNZ у вас будет <span>ноль сомнений</span> в качестве работы наших сотрудников. Вы точно будете знать на что пойдут деньги, на какой стадии работы Ваш ремонт и в какое время он будет окончен. Подстроимся под бюджет и выполним свою работу <span>первоклассно</span>. Мы будем держать Вас в курсе о процессе ремнота от начала и до его конца.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-form container">
+        <div class="second-form_container">
+            <div class="second-form_container-text">
+                <h1>Ремонт с KNZ</h1>
+                <p>Бесплатная смета и консультация по Вашему ремонту</p>
+            </div>
+            <form action="">
+                <input type="text" name="Name" placeholder="Ваше имя" required>
+                <input type="number" name="Phone" placeholder="Номер телефона" required>
+                <p>Captcha</p>
+                <button class="second-form_button"><p>Оставить заявку</p></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="benefits" class="benefits">
+        <div class="benefits_container">
+            <div class="benefits_title">
+                <h1>Почему стоит выбрать KNZ</h1>
+            </div>
+            <div class="benefits-wrapp">
+            <div class="benefits_section-1">
+                <div class="benefits_wrapper benefits_wrapper-1">
+                    <div class="benefits_dec">+</div>
+                    <div class="benefits_text">
+                        <div class="benefits_wrapper-title">
+                            <h4>Нам можно доверять</h4>
+                        </div>
+                        <div class="benefits_wrapper-desc">
+                            <p class="p">Нам очень важно доверие наших клиентов, потому мы держимся выстроенного плана, соблюдаем сроки и качественно выполняем должное.</p>
+                        
+                        </div>
+                    </div>
+                    <img class="benefits_wrapper-svg" src="@img/Arrow 3.svg" alt="">
+                </div>
+            
+            
+                <div id="benefits_wrapper"  class="benefits_wrapper benefits_wrapper-2">
+                    <div class="benefits_dec">+</div>
+                    <div class="benefits_text">
+                        <div class="benefits_wrapper-title">
+                            <h4>Сдаем работу в сроки</h4>
+                        </div>
+                        <div class="benefits_wrapper-desc">
+                            <p class="p p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi tempore rerum laboriosam voluptates, nam modi fugiat soluta quisquam officiis, voluptatibus alias a velit numquam architecto ratione quasi nesciunt distinctio perferendis!
+                            Veritatis nobis ducimus unde ipsum, quae enim aliquam perferendis sint amet officia est illo animi eos distinctio excepturi aspernatur ut facere nihil nostrum! Fugiat provident vel, optio architecto et sequi?</p>
+                        
+                        </div>
+                    </div>
+                <img class="benefits_wrapper-svg" src="@img/Arrow 3.svg" alt="">
+                </div>
+            
+            
+                <div class="benefits_wrapper benefits_wrapper3">
+                    <div class="benefits_dec">+</div>
+                    <div class="benefits_text">
+                        <div class="benefits_wrapper-title">
+                            <h4>Пятилетняя гарантия</h4>
+                        </div>
+                        <div class="benefits_wrapper-desc">
+                            <p class="p">KANAZIRSKIY предоставляет гарантию 5 лет на любые свои услуги.</p>
+                        </div>
+                    </div>
+                    <img class="benefits_wrapper-svg" src="@img/Arrow 3.svg" alt="">
+                </div>
+           </div>
+            
+           <div class="benefits_section-2">
+                <div class="benefits_wrapper benefits_wrapper4">
+                    <div class="benefits_dec">+</div>
+                    <div class="benefits_text">
+                        <div class="benefits_wrapper-title">
+                            <h4>Количество проектов</h4>
+                        </div>
+                        <div class="benefits_wrapper-desc">
+                            <p class="p">Мы уже давно себя зарекомендовали как одни из лучших в сфере ремонта квартир и это показывает количество выполненных работ по которым можно определить качество и наше отношение к любимому делу.</p>
+                        </div>
+                    </div>
+                <img class="benefits_wrapper-svg" src="@img/Arrow 3.svg" alt="">
+                </div>
+           
+            
+                <div class="benefits_wrapper benefits_wrapper5">
+                    <div class="benefits_dec">+</div>
+                    <div class="benefits_text">
+                        <div class="benefits_wrapper-title">
+                            <h4>Четкий план ведения работ</h4>
+                        </div>
+                        <div class="benefits_wrapper-desc">
+                            <p class="p">Благодаря нашему большому опыту работы с клиентами мы уже выстроили четкий план по которму работаем с клиентами уже несколько лет.</p>
+                        </div>
+                    </div>
+                <img class="benefits_wrapper-svg" src="@img/Arrow 3.svg" alt="">
+                </div>
+            
+            
+                <div class="benefits_wrapper benefits_wrapper6">
+                    <div class="benefits_dec">+</div>
+                    <div class="benefits_text">
+                        <div class="benefits_wrapper-title">
+                            <h4>Качественные поставщики</h4>
+                        </div>
+                        <div class="benefits_wrapper-desc">
+                            <p class="p">За долгое время на рынке услуг ремонта квартир мы отобрали качественных поставщиков с которыми имеем связь уже большое количество времени.</p>
+                        </div>
+                    </div>
+                <img class="benefits_wrapper-svg" src="@img/Arrow 3.svg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="works container">
+        <div class="works_container">
+            <h1>Более <span>100</span> выполненых ремонтов</h1>
+        </div>
+    </div>
+
+    <!-- <div class="partners">
+        <div class="partners_container">
+            <div class="partners_wrapper">
+                <div class="partners_title">
+                    <h1>Партнеры KNZ</h1>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    
+    <div class="gallery bg">
+        <h1 class="h1_bg">Kanazirskiy</h1>
+        <div class="gallery_container">
+            <h1>Работы KNZ</h1>
+            <div class="gallery_wrapper">
+                <div class="gallery_img gallery_img1">
+                    <img src="@img/1.png" alt="">
+                    <img src="@img/6.png" alt="">
+                    <img src="@img/11.png" alt="">
+                </div>
+                <div class="gallery_img gallery_img2">
+                    <img src="@img/7.png" alt="">
+                    <img src="@img/2.png" alt="">
+                </div>
+                <div class="gallery_img gallery_img3">
+                    <img src="@img/4.png" alt="">
+                    <img src="@img/9.png" alt="">
+                    <img src="@img/13.png" alt="">
+                </div>
+                <div class="gallery_img gallery_img4">
+                    <img src="@img/5.png" alt="">
+                    <img src="@img/10.png" alt="">
+                    <img src="@img/14.png" alt="">
+                </div>
+                <div class="gallery_img gallery_img5">
+                    <img src="@img/3.png" alt="">
+                    <img src="@img/8.png" alt="">
+                    <img src="@img/12.png" alt="">
+                </div>
+                
+                
+            </div>
+            <button><a href="works.html"><p>Больше работ</p></a></button>
+        </div>
+    </div>
+
+   
+    <div id="plan" class="plan bg">
+        
+        <div class="plan_container">
+            <h1>По какой схеме работает KNZ</h1>
+            <div class="plan_container-wrapp">
+                <div class="plan_wrapp">
+                    <div class="plan_wrapper">
+                        <div class="plan_section">
+                            <h2>01</h2>
+                            <h3>Созваниваемся</h3>
+                        </div>
+                    </div>
+                    <div class="plan_wrapper">
+                        <div class="plan_section another-bg">
+                            <h2>02</h2>
+                            <h3>При встрече обсуждаем детали проекта</h3>
+                        </div>
+                    </div>
+                    <div class="plan_wrapper">
+                        <div class="plan_section">
+                            <h2>03</h2>
+                            <h3>Формируем тех. задание</h3>
+                        </div>
+                    </div>
+                    <div class="plan_wrapper">
+                        <div class="plan_section another-bg">
+                            <h2>04</h2>
+                            <h3>Разрабатываем дизайн проект</h3>
+                        </div>
+                    </div>
+                </div> 
+                    <div class="plan_wrapp">
+                        <div class="plan_wrapper">
+                            <div class="plan_section">
+                                <h2>05</h2>
+                                <h3>Составляем смету расходов</h3>
+                            </div>
+                        </div>
+                    <div class="plan_wrapper">
+                        <div class="plan_section another-bg">
+                            <h2>06</h2>
+                            <h3>Заключаем договор</h3>
+                        </div>
+                    </div>
+                    <div class="plan_wrapper">
+                        <div class="plan_section">
+                            <h2>07</h2>
+                            <h3>Закрепляем за Вашим проектом прораба</h3>
+                        </div>
+                    </div>
+                    <div class="plan_wrapper ">
+                        <div class="plan_section another-bg">
+                            <h2>08</h2>
+                            <h3>Поэтапная оплата ремонта</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan_wrapper plan_wrapper-2">
+                    <div class="plan_section plan_section-2">
+                        <h2>09</h2>
+                        <h3>Сдача квартиры точно по установленному времени</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="advantage">
+         <div class="advantage_container">
+             <div class="advantage_sec avantage_first">
+                 <h1>С 2012</h1>
+                 <p>года на рынке услуг ремонта</p>
+             </div>
+             <div class="advantage_sec advantage_second">
+                 <h1>10</h1>
+                 <p>лет минимальный стаж работников</p>
+             </div>
+             <div class="advantage_sec advantage_third">
+                <h1>193</h1>
+                <p>довольных клиента</p>
+            </div>
+         </div>
+     </div> 
+
+     <div id="slider" class="slider slider_bg">
+         <div class="slider_container">
+             <div class="slider_img">
+                <img class="slider_img-inner" src="@img/9411365688_79bde0e1c5_o 2.png" alt="">
+                <img class="slider_img-inner2 none" src="@img/designproject.png"  alt="">
+             </div>
+             <div class="slider_wrapper">
+             <div class="slider_text_container slider_text_container-1">
+                 <h1>Уборка строительного мусора</h1>
+                 <p>Вам не придется беспокоиться об уборке квартиры от строительного мусора. После ремонта мы бесплатно делаем чистку всех труднодоступных мест и вывоз мусора.</p>
+             </div>
+             <div class="slider_text_container slider_text_container-2  none">
+               
+                <h1>Строгие рамки установленного бюджета</h1>
+                <p>Заказчик сразу видит реальную стоимость проекта. Согласование происходит на начальном этапе. В процессе работы цена изменится не может.</p>
+            </div>
+             <div class="slider_elem">
+                <div class="slider_arrow"><img src="@img/Arrow 6.svg" alt=""></div>
+             </div>
+             </div>
+             <div class="slider_decoration">
+                 <img src="@img/Rectangle 88.png" alt="">
+             </div>
+             
+         </div>
+     </div>
+
+     <div class="sec bg">
+        <div class="sec_wrapper">
+            <h1>Kanazirskiy <span>это</span></h1>
+            <div class="sec_li_wrapper">
+            <ul>
+                <li>Гарантия качества <img src="@img/Line 10.svg" alt=""></li>
+                <li>Доступность <img src="@img/Line 10.svg" alt=""></li>
+            </ul>
+            <ul>
+                <li>Надежность <img src="@img/Line 10.svg" alt=""></li>
+                <li>Цена</li>
+            </ul>
+            </div>
+        </div>
+         <div class="sec_container">
+             
+         </div>
+     </div>
+
+
+     <div class="services bg">
+         <h1>Услуги KNZ</h1>
+         <div class="services_container ">
+            <a href="remont.html"><div class="serices_item3 serices_item services_item-bg">
+                <h3>Ремонт</h3>
+                <ul>
+                    <li>Квартир</li>
+                    <li>Офисов</li>
+                    <li>Евроремонт</li>
+                    <li>Капитальный ремонт</li>
+                    <li>От<span>250 у.е</span></li>
+                </ul>
+                
+            </div>
+            </a>
+            <a href="malyarnuerabotu.html"><div class="serices_item serices_item1 services_item-bg">
+                 <h3>Малярные работы</h3>
+                 
+             </div>
+             </a>
+             <a href="designproject.html"><div class="serices_item serices_item2 services_item-bg">
+                <h3>Дизайн проект</h3>
+                
+            </div>
+            </a>
+            <a href="electrotehnicheskierabotu.html"><div class="serices_item serices_item4 services_item-bg">
+                <h3>Эл.технические<br> работы</h3>
+                
+            </div>
+            <a href="services.html"><div class="serices_item serices_item4 services_item-bg">
+                <h3>Ремонт </h3>
+               
+            </div>
+            <a href="services.html"><div class="serices_item serices_item4 services_item-bg">
+                <h3>Ремонт </h3>
+               
+            </div>
+            
+            </a>
+         </div>
+     </div>
+
+     <div class="contacts bg">
+         <div class="contacts_map">
+        </div>
+         <div id="form" class="contacts_container">
+             <h1>Заказать ремонт</h1>
+             <p>Оставьте свои контакты. Мы в скором времени перезвоним и уточним все детали, дадим вам рекомендации и вместе составим смету:</p>
+             <form action="">
+                 <div class="label label1">
+                     <label for="name">Ваше имя</label>
+                     <input type="text" id="name" required>
+                 </div>
+                 <div class="label label2">
+                    <label for="phone">Телефон</label>
+                    <input type="number" id="phone" required>
+                </div>
+                <div class="label label2">
+                    <label for="name">Дополнительная информация</label>
+                    <textarea></textarea>
+                </div>
+                <button><p>Оставить заявку</p></button>
+             </form>
+             <div class="contacts_social">
+                 <h5>Добавляйте нас в соц.сетях:</h5>
+                 <ul>
+                     <li><a href=""><img src="@img/Group 30.svg" alt=""></a></li>
+                     <li><a href=""><img src="@img/Group 31.svg" alt=""></a></li>
+                     <li><a href=""><img src="@img/Group 32.svg" alt=""></a></li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+     
+    
+
+    @@include('html/footer.html',{})
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script src="js/app.min.js"></script>
+    
+</body>
+</html>

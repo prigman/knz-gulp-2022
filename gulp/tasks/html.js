@@ -1,0 +1,32 @@
+import fileInclude from "gulp-file-include";
+import webpHtmlNosvg from "gulp-webp-html-nosvg";
+import versionNumber from "gulp-version-number";
+//import pug from "gulp-pug";
+
+export const html = () => {
+	return app.gulp.src(app.path.src.html)
+		.pipe(app.plugins.plumber(
+			app.plugins.notify.onError({
+				title: "HTML2",
+				message: "Error: <%= error.message %>"
+			}))
+		)
+		.pipe(fileInclude())
+		/*
+		.pipe(pug({
+			// Cжатие HTML файла
+			pretty: true,
+			// Показывать в терминале какой файл обработан
+			verbose: true
+		}))
+		*/
+		.pipe(app.plugins.replace(/@img\//g, 'img/'))
+		
+		.pipe(app.gulp.dest(app.path.build.html))
+		.pipe(
+			app.plugins.if(
+				app.isDev,
+				app.plugins.browsersync.stream()
+			)
+		);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="css/services.min.css">
+    <link rel="stylesheet" href="css/page.min.css">
+    @@include('html/head.html',{
+        "title":"Услуги"
+    })
+
+<body>
+    <div class="body_page">
+        @@include('html/header.html',{}) 
+        <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="index.html">
+              <span itemprop="name">Главная</span></a>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="services.html">
+              <span itemprop="name">Услуги</span></a>
+              <meta itemprop="position" content="2" />
+            </li>
+        </ul>
+        <div class="body_page_title">
+            <h1>Услуги</h1>
+        </div>
+    </div>
+    <main class="main_page bg">
+        <div class="services bg">
+            <div class="services_container ">
+               <a href="services/remont.html"><div class="serices_item3 serices_item services_item-bg">
+                   <h3>Ремонт</h3>
+                   <ul>
+                       <li>Квартир</li>
+                       <li>Офисов</li>
+                       <li>Евроремонт</li>
+                       <li>Капитальный ремонт</li>
+                       <li>От<span>250 у.е</span></li>
+                   </ul>
+                   
+               </div>
+               </a>
+               <a href="services/malyarnuerabotu.html"><div class="serices_item serices_item1 services_item-bg">
+                    <h3>Малярные работы</h3>
+                    
+                </div>
+                </a>
+                <a href="services/designproject.html"><div class="serices_item serices_item2 services_item-bg">
+                   <h3>Дизайн проект</h3>
+                   
+               </div>
+               </a>
+               <a href="services/electrotehnicheskierabotu.html"><div class="serices_item serices_item4 services_item-bg">
+                   <h3>Электротехнические работы</h3>
+                   
+               </div>
+               <a href="services.html"><div class="serices_item serices_item4 services_item-bg">
+                   <h3>Ремонт </h3>
+                  
+               </div>
+               <a href="services.html"><div class="serices_item serices_item4 services_item-bg">
+                   <h3>Ремонт </h3>
+                  
+               </div>
+               
+               </a>
+            </div>
+        </div>
+    </main>
+
+    @@include('html/footer.html',{})
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+    

@@ -1,0 +1,33 @@
+.page_contacts_map {
+  width: 100%;
+  height: 610px;
+  background-color: wheat;
+}
+
+.page_contacts_ul {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .contacts_social_img {
+    a {
+      margin: 10px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .page_img {
+    margin: 5px;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
