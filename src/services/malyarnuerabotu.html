@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="..css/malyarnuerabotu.min.css">
-    <link rel="stylesheet" href="..css/page.min.css">
-    @@include('..html/head.html',{
-        "title":"Малярные работы"
-    })
+@@include('../html/head.html',{
+"title":"Малярные работы",
+"cssPath":"../css/style.min.css"
+})
 
 <body>
     <div class="body_page">
-        @@include('..html/header.html',{}) 
+        @@include('../html/header.html',{})
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="about.html">Услуги</a></li>
@@ -81,9 +80,8 @@
         </table>
     </main>
 
-    @@include('..html/footer.html',{})
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-<script src="..js/app.min.js"></script>
+    @@include('../html/footer.html',{})
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="../js/app.min.js"></script>
 </body>
-    

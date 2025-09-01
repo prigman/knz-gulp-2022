@@ -1,89 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="..css/remont.min.css">
-    <link rel="stylesheet" href="..css/page.min.css">
-    @@include('..html/head.html',{
-        "title":"Ремонт"
-    })
+  @@include('../html/head.html',{ "title":"Ремонт", "cssPath":"../css/style.min.css" })
 
-<body>
+  <body>
     <div class="body_page">
-        @@include('..html/header.html',{}) 
-        <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">Ремонт</a></li>
-        </ul>
-        <div class="body_page_title">
-            <h1>Ремонт</h1>
-        </div>
+      @@include('../html/header.html',{})
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">Ремонт</a></li>
+      </ul>
+      <div class="body_page_title">
+        <h1>Ремонт</h1>
+      </div>
     </div>
     <main class="main_page bg">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Название работ</th>
-                    <th>Единицы измерения</th>
-                    <th>Цена работ в гривнах</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-                <tr>
-                    <td>Lorem</td>
-                    <td>123</td>
-                    <td>250</td>
-                </tr>
-            </tbody>
-        </table>
+      <div class="remontButton">
+        <h1 class="">Малярные работы</h1>
+        <img class="remontImg" src="../img/Arrow 3.svg" alt="" />
+      </div>
+      <table class="table none">
+        <thead>
+          <tr>
+            <th>Вид работ</th>
+            <th>Ед.измерения</th>
+            <th>Цена работы(грн)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Поклейка обоев стены, откосы</td>
+            <td>м²/м.п</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>Покраска стена, потолка</td>
+            <td>м²/м.п</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Поклейка фотообоев</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Монтаж декоративных уголков</td>
+            <td>м²/м.п</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>Монтаж линолеума, ковролина</td>
+            <td>м²/м.п</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>Монтаж ламината (пол)</td>
+            <td>м²/м.п</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Монтаж ламината (диагональ) (пол)</td>
+            <td>м²/м.п</td>
+            <td>110</td>
+          </tr>
+          <tr>
+            <td>Монтаж ламината стена, потолок (клеем)</td>
+            <td>м²/м.п</td>
+            <td>330</td>
+          </tr>
+          <tr>
+            <td>Монтаж винилового покрытия (замковым способом)</td>
+            <td>м²/м.п</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <td>Монтаж винилового покрытия (клеевым способом)</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Монтаж плинтуса (МДФ, полиуретан)</td>
+            <td>м.п</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <td>Монтаж плинтуса (пластик)</td>
+            <td>м.п</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>Стыкование разных цветов краски</td>
+            <td>м.п</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <td>Радиаторы/трубы (обработка от ржавчины)</td>
+            <td>секц./м.п</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Радиаторы/трубы (покраска)</td>
+            <td>секц./м.п</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Установка карнизов</td>
+            <td>м.п</td>
+            <td>200</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="remontButton">
+        <h1 class="">Сантехнические работы</h1>
+        <img class="remontImg" src="../img/Arrow 3.svg" alt="" />
+      </div>
+      <table class="table none">
+        <thead>
+          <tr>
+            <th>Вид работ</th>
+            <th>Ед.измерения</th>
+            <th>Цена работы(грн)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Разводка сантехники точка</td>
+            <td>шт.</td>
+            <td>1350</td>
+          </tr>
+          <tr>
+            <td>Разводка радиаторов точка</td>
+            <td>шт.</td>
+            <td>1350</td>
+          </tr>
+          <tr>
+            <td>Демонтаж / монтаж стояков канализации (пластик)</td>
+            <td>шт.</td>
+            <td>1350</td>
+          </tr>
+          <tr>
+            <td>Демонтаж / монтаж стояков канализации (чугун)</td>
+            <td>шт.</td>
+            <td>2500</td>
+          </tr>
+          <tr>
+            <td>Установка сантехники точка</td>
+            <td>шт.</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td>Установка ванны, душ.кабины</td>
+            <td>шт.</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td>Демонтаж радиаторов</td>
+            <td>шт.</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>Установка радиаторов</td>
+            <td>шт.</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Монтаж системы "Аквастоп"</td>
+            <td>компл</td>
+            <td>2300</td>
+          </tr>
+          <tr>
+            <td>Сантехподготовительные работы</td>
+            <td>компл</td>
+            <td>500</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="remontButton">
+        <h1 class="">Дизайн проект</h1>
+        <img class="remontImg" src="../img/Arrow 3.svg" alt="" />
+      </div>
+      <table class="table none">
+        <thead>
+          <tr>
+            <th rowspan="2">Вид работ</th>
+            <th colspan="3">у.е. за м.кв.</th>
+          </tr>
+          <tr>
+            <th style="text-align: center">Менее 50 м.кв.</th>
+            <th>50 - 150 м.кв.</th>
+            <th>Более 150 м.кв.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Выполнение Дизайн проекта в полном объёме (все
+              чертежи+визуализации) с авторским сопровождением
+            </td>
+            <td>28</td>
+            <td>23</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>
+              Выполнение Дизайн проекта в полном объёме (все
+              чертежи+визуализации) без авторского сопровождения
+            </td>
+            <td>17</td>
+            <td>14</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>
+              Частичное выполнение Дизайн проекта (чертежи перепланировки и
+              расстановки мебели+визуализации)
+            </td>
+            <td>8,5</td>
+            <td>7,5</td>
+            <td>6,5</td>
+          </tr>
+          <tr>
+            <td>
+              Выполнение технической части Дизайн проекта (полный комплект
+              чертежей без визуализаций)
+            </td>
+            <td>7</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>
+              Частичное выполнение технической части Дизайн проекта (чертежи
+              перепланировки и расстановки мебели)
+            </td>
+            <td>5,5</td>
+            <td>4,5</td>
+            <td>3,5</td>
+          </tr>
+          <tr>
+            <td>
+              Реализация готового Дизайн проекта (выбор материалов+авторское
+              сопровождение)
+            </td>
+            <td>12</td>
+            <td>10</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Выбор материалов</td>
+            <td colspan="3">10 за 1 час + транспортные расходы</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="remontButton">
+        <h1 class="">Эл.технические работы</h1>
+        <img class="remontImg" src="../img/Arrow 3.svg" alt="" />
+      </div>
+      <table class="table none">
+        <thead>
+          <tr>
+            <th>Вид работ</th>
+            <th>Ед.измерения</th>
+            <th>Цена работы(грн)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Разводка электроточки (освещение) точка</td>
+            <td>шт.</td>
+            <td>155</td>
+          </tr>
+          <tr>
+            <td>Разводка электроточки (розетки, выключатели) точка</td>
+            <td>шт.</td>
+            <td>155</td>
+          </tr>
+          <tr>
+            <td>Монтаж щитовой под автоматы</td>
+            <td>шт.</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>Монтаж + расключение автоматов</td>
+            <td>шт.</td>
+            <td>132</td>
+          </tr>
+          <tr>
+            <td>Установка электроприбора (освещение)</td>
+            <td>шт.</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Установка электроприбора (розетки, выключатели)</td>
+            <td>шт.</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Монтаж теплого электр. пола</td>
+            <td>м²</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>Монтаж светодиодной ленты (без профиля)</td>
+            <td>м.п.</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Монтаж кабель-канала</td>
+            <td>шт.</td>
+            <td>75</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="remontButton">
+        <h1 class="">Плиточные работы</h1>
+        <img class="remontImg" src="../img/Arrow 3.svg" alt="" />
+      </div>
+      <table class="table none">
+        <thead>
+          <tr>
+            <th>Вид работ</th>
+            <th>Ед.измерения</th>
+            <th>Цена работы(грн)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Плитка стены/откосы</td>
+            <td>м²/м.п</td>
+            <td>450</td>
+          </tr>
+          <tr>
+            <td>Плитка пол</td>
+            <td>м²/м.п</td>
+            <td>450</td>
+          </tr>
+          <tr>
+            <td>Плитка кухня раб. стена</td>
+            <td>м²/м.п</td>
+            <td>450</td>
+          </tr>
+          <tr>
+            <td>Плитка плинтус (до 10см)</td>
+            <td>м.п</td>
+            <td>165</td>
+          </tr>
+          <tr>
+            <td>Зарезка углов 45°</td>
+            <td>м.п</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>Плитка мозаичного типа (декор)</td>
+            <td>м.п</td>
+            <td>330</td>
+          </tr>
+          <tr>
+            <td>Декоративный фриз</td>
+            <td>м.п</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <td>Декоративный фриз (сложный)</td>
+            <td>м.п</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>Декоративный камень</td>
+            <td>м²/м.п</td>
+            <td>490</td>
+          </tr>
+          <tr>
+            <td>Затирка двухкомпонентная</td>
+            <td>м²/м.п</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Установка ревизионных окон (металл)</td>
+            <td>шт.</td>
+            <td>650</td>
+          </tr>
+          <tr>
+            <td>Установка ревизионных окон (пластик)</td>
+            <td>шт.</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>Гидроизоляция пола</td>
+            <td>м²/м.п</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>Сверление отверстий в плитке</td>
+            <td>шт.</td>
+            <td>85</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="remontButton">
+        <h1 class="">Гипсокартонные работы</h1>
+        <img class="remontImg" src="../img/Arrow 3.svg" alt="" />
+      </div>
+      <table class="table none">
+        <thead>
+          <tr>
+            <th>Вид работ</th>
+            <th>Ед.измерения</th>
+            <th>Цена работы(грн)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Монтаж гипсокартона (потолок, стена, перегородка)</td>
+            <td>м²/м.п</td>
+            <td>195</td>
+          </tr>
+          <tr>
+            <td>Шумоизоляция стояков (минвата)</td>
+            <td>шт.</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <td>Монтаж гипсокартона перегородка (радиусная)</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Монтаж гипсокартона усиленный в 2 слоя</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Звукоизоляция ГК в 2 слоя стена</td>
+            <td>м²/м.п</td>
+            <td>330</td>
+          </tr>
+          <tr>
+            <td>Звукоизоляция ГК в 2 слоя потолок</td>
+            <td>м²/м.п</td>
+            <td>350</td>
+          </tr>
+          <tr>
+            <td>Усиление кессона под натяжку</td>
+            <td>м.п</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Монтаж паробарьера</td>
+            <td>м²/м.п</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>Наклейка г/картона борт</td>
+            <td>м.п</td>
+            <td>50</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="remontButton">
+        <h1 class="">Штукатурные работы</h1>
+        <img class="remontImg" src="../img/Arrow 3.svg" alt="" />
+      </div>
+      <table class="table none">
+        <thead>
+          <tr>
+            <th>Вид работ</th>
+            <th>Ед.измерения</th>
+            <th>Цена работы(грн)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Кладка стен (газобетон до 100мм)</td>
+            <td>м²/м.п</td>
+            <td>180</td>
+          </tr>
+          <tr>
+            <td>Кладка стен (газобетон 150мм) (армированная)</td>
+            <td>м²/м.п</td>
+            <td>215</td>
+          </tr>
+          <tr>
+            <td>Кладка стен (газобетон 200мм) (армированная)</td>
+            <td>м²/м.п</td>
+            <td>230</td>
+          </tr>
+          <tr>
+            <td>Кладка стен (газобетон 300мм) (армированная)</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Кладка стен (газобетон 400мм) (армированная)</td>
+            <td>м²/м.п</td>
+            <td>260</td>
+          </tr>
+          <tr>
+            <td>Кладка стен (газобетон 500мм) (армированная)</td>
+            <td>м²/м.п</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>Грунтование кварцгрунтом, бетоноконтактом</td>
+            <td>м²/м.п</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Штукатурка стены (откосы) п/маякам</td>
+            <td>м²/м.п</td>
+            <td>180</td>
+          </tr>
+          <tr>
+            <td>Штукатурка стены п/маякам (РАДИУСНАЯ)</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Штукатурка потолок п/маякам</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Штукатурка стен свыше 5 см</td>
+            <td>м²/м.п</td>
+            <td>215</td>
+          </tr>
+          <tr>
+            <td>Штукатурка цементно-песчаными смесями</td>
+            <td>м²/м.п</td>
+            <td>215</td>
+          </tr>
+          <tr>
+            <td>
+              Штукатурка стен (в слой 1.5-2.5 см) под плинтус скрытого монтажа
+            </td>
+            <td>м²/м.п</td>
+            <td>180</td>
+          </tr>
+          <tr>
+            <td>Штукатурка стен (ниши) под плинтус скрытого монтажа</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Монтаж сетки рабица (армирующей сетки)</td>
+            <td>м²/м.п</td>
+            <td>55</td>
+          </tr>
+          <tr>
+            <td>Стяжка пола (до 50 мм) черновая</td>
+            <td>м²/м.п</td>
+            <td>195</td>
+          </tr>
+          <tr>
+            <td>Стяжка пола (до 100 мм) черновая</td>
+            <td>м²/м.п</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Керамзитобетонная стяжка</td>
+            <td>м²/м.п</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Утепление стены/потолок (минвата)</td>
+            <td>м²/м.п</td>
+            <td>65</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="remontButton">
+        <h1 class="">Услуги прораба</h1>
+        <img class="remontImg" src="../img/Arrow 3.svg" alt="" />
+      </div>
+      <table class="table none">
+        <thead>
+          <tr>
+            <th>Вид работ</th>
+            <th>Ед.измерения</th>
+            <th>Цена работы(доллар)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Услуги проверяющего человека на строительной площадке</td>
+            <td>в мес.</td>
+            <td>300</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
-    @@include('..html/footer.html',{})
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-<script src="..js/app.min.js"></script>
-</body>
-    
+    @@include('../html/footer.html',{})
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="../js/app.min.js"></script>
+  </body>
+</html>
